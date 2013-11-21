@@ -43,15 +43,15 @@
 {
     if (_cycled) {
         if (index < 0) {
-            index = _list.count-1;
+            _currentIndex = _list.count-1;
         }
         else if (index > _list.count)
         {
-            index = 0;
+            _currentIndex = 0;
         }
     }
-    if (index > 0 && index < _list.count) {
-        return _list[index];
+    if (_currentIndex > 0 && _currentIndex < _list.count) {
+        return _list[_currentIndex];
     }
     else return nil;
 }
