@@ -42,18 +42,23 @@
 - (id)itemAtIndex:(int)index
 {
     if (_cycled) {
-        if (index < 0) {
-            _currentIndex = _list.count-1;
-        }
-        else if (index > _list.count)
-        {
+        if (index >= _list.count) {
             _currentIndex = 0;
-        }
+        } else
+            if (index < 0) {
+                _currentIndex = _list.count-1;
+            }
     }
-    if (_currentIndex > 0 && _currentIndex < _list.count) {
+    
+    if (_currentIndex >= 0  && _currentIndex < _list.count) {
         return _list[_currentIndex];
     }
-    else return nil;
+    else
+    {
+        _currentIndex = 0;
+        _list = nil;
+        return nil;
+    }
 }
 
 - (id)nextItem
