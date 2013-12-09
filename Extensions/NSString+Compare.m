@@ -15,4 +15,12 @@
     return [self rangeOfString:substring].location != NSNotFound;
 }
 
+- (BOOL)isStringIn:(NSArray *)strings
+{
+    for (NSString* string in strings) {
+        if ([self isEqualToString:string]) return YES;
+    }
+    return NO;
+}
+
 @end

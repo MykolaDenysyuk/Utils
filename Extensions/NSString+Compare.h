@@ -11,5 +11,6 @@
 @interface NSString (Compare)
 
 - (BOOL)isContainString:(NSString *)substring;
+- (BOOL)isStringIn:(NSArray *)strings;
 
 @end
