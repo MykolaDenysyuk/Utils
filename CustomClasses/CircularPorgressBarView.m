@@ -126,12 +126,14 @@
 - (void)applyAttributedString
 {
     _titleLabel.font = _unitsFont;
+    _titleLabel.textColor = _unitsColor;
     
     NSString* string = [NSString stringWithFormat:@"%i\n", _count];
     string = _units ? [string stringByAppendingString:_units] : string;
     NSMutableAttributedString* attrString = [[NSMutableAttributedString alloc] initWithString:string];
     NSRange range = [string rangeOfString:[NSString stringWithFormat:@"%i", _count]];
     [attrString addAttribute:NSFontAttributeName value:_countFont range:range];
+    [attrString addAttribute:NSForegroundColorAttributeName value:_countColor range:range];
     
     _titleLabel.attributedText = attrString;
 }
