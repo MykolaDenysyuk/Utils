@@ -232,6 +232,7 @@
 - (void)didSelectItem:(UIButton *)itemButton
 {
     [self setSelectedItemAtIndex:itemButton.tag];
+    [self sendActionsForControlEvents:UIControlEventValueChanged];
 }
 
 #pragma mark - Helpers;
