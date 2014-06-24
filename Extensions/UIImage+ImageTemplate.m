@@ -22,7 +22,7 @@
     [color setFill];
     
     // translate/flip the graphics context (for transforming from CG* coords to UI* coords
-    CGContextTranslateCTM(context, 0, img.size.height);
+    CGContextTranslateCTM(context, 0, self.size.height);
     CGContextScaleCTM(context, 1.0, -1.0);
     
     // set the blend mode to color burn, and the original image
