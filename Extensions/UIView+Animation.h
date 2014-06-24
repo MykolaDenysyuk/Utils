@@ -15,4 +15,6 @@
 - (void) scale:(float)scale during:(float)duration withOption:(UIViewAnimationOptions)option withCompletion:(void (^)(void))block;
 - (void)setWhiteCustomStyle;
 
+- (void)rotateDuration:(float)duration repeat:(BOOL)repeat;
+
 @end
