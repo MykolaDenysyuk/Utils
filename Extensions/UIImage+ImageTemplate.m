@@ -1,9 +1,9 @@
 //
 //  UIImage+ImageTemplate.m
-//  LocalBuoys
+//  
 //
 //  Created by Mykola Denysyuk on 6/24/14.
-//  Copyright (c) 2014 MobileSoft365. All rights reserved.
+//
 //
 
 #import "UIImage+ImageTemplate.h"
