@@ -13,6 +13,8 @@
 
 @interface UIView (Drawing)
 
+- (void)applyBackgroundGradientWithColors:(NSArray *)colors whichBeginsAt:(CGPoint)startAt andEndsAt:(CGPoint)endAt;
+
 @end
 
 //

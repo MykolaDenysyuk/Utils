@@ -13,6 +13,16 @@
 
 @implementation UIView (Drawing)
 
+- (void)applyBackgroundGradientWithColors:(NSArray *)colors whichBeginsAt:(CGPoint)startAt andEndsAt:(CGPoint)endAt
+{
+    CAGradientLayer *gl = [CAGradientLayer layer];
+    gl.frame = self.bounds;
+    gl.colors = colors;
+    gl.startPoint = startAt;
+    gl.endPoint = endAt;
+    self.layer.mask = gl;
+}
+
 @end
 
 
