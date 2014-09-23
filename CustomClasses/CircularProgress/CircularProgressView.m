@@ -67,7 +67,7 @@
 {
     _progress = progress;
     [self setNeedsDisplay];
-    NSLog(@"progress: %f", progress);
+//    NSLog(@"progress: %f", progress);
 }
 
 #pragma mark - Drawing:
