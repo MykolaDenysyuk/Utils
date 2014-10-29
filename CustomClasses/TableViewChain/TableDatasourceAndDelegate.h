@@ -47,4 +47,14 @@ typedef void (^TableManipulateWithRowBlock)(UITableView*,id cell,NSIndexPath* in
 @property (nonatomic, copy) TableManipulateWithRowBlock configureCellBlock;
 @property (nonatomic, copy) TableManipulateWithRowBlock didSelectRowBlock;
 
+- (void)setHeaderHeightBlock:(TableHeaderFooterHeightBlock)headerHeightBlock;
+- (void)setFooterHeightBlock:(TableHeaderFooterHeightBlock)footerHeightBlock;
+- (void)setCreateHeaderBlock:(TableCreateHeaderFooterViewBlock)createHeaderBlock;
+- (void)setCreateFooterBlock:(TableCreateHeaderFooterViewBlock)createFooterBlock;
+- (void)setNumberOfRowsBlock:(TableNumberOfRowsInSection)numberOfRowsBlock;
+- (void)setGetRowItemBlock:(TableRowItem)getRowItemBlock;
+- (void)setRowHeightBlock:(TableRowHeightBlock)rowHeightBlock;
+- (void)setConfigureCellBlock:(TableManipulateWithRowBlock)configureCellBlock;
+- (void)setDidSelectRowBlock:(TableManipulateWithRowBlock)didSelectRowBlock;
+
 @end
