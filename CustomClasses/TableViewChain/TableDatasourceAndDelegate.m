@@ -12,20 +12,37 @@
 
 #import "TableDatasourceAndDelegate.h"
 
+@interface TableDatasourceAndDelegate ()
+{
+    IBOutlet UITableView * _nibOutletTableView;
+}
+@end
+
 @implementation TableDatasourceAndDelegate
+
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
+    [self configureForTableView:_nibOutletTableView];
+}
 
 - (id)initWithTableView:(UITableView *)tableView
 {
     self = [super init];
     if (self) {
-        _tableView = tableView;
-        _tableView.delegate = self;
-        _tableView.dataSource = self;
-        _defaultHeaderHeight = kSectionHeight;
-        _defaultFooterHeight = kFooterHeight;
-        _defaultRowHeight = kRowHeight;
+        [self configureForTableView:tableView];
     }
     return self;
+}
+
+- (void)configureForTableView:(UITableView *)tableView
+{
+    _tableView = tableView;
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
+    _defaultHeaderHeight = kSectionHeight;
+    _defaultFooterHeight = kFooterHeight;
+    _defaultRowHeight = kRowHeight;
 }
 
 - (void)setSectionTitles:(NSArray *)sectionTitles
@@ -44,6 +61,9 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
+    if (self.numberOfSectionsBlock) {
+        return self.numberOfSectionsBlock(tableView, 0);
+    }
     return self.sectionTitles.count;
 }
 
@@ -57,7 +77,9 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    return self.sectionTitles[section];
+    if (section < self.sectionTitles.count)
+        return self.sectionTitles[section];
+    return nil;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -102,7 +124,7 @@
     UILabel * titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, tableView.frame.size.width-10, height)];
     titleLabel.numberOfLines = 0;
     titleLabel.font = [UIFont boldSystemFontOfSize:10];
-    titleLabel.text = [self tableView:tableView titleForHeaderInSection:section];    
+    titleLabel.text = [self tableView:tableView titleForHeaderInSection:section];
     [holderView addSubview:titleLabel];
     
     return holderView;
@@ -168,7 +190,7 @@
 
 - (id)retrieveRowItemInTable:(UITableView* )tableView forIndexPath:(NSIndexPath *)indexPath
 {
-    id rowItem = self.getRowItemBlock ? self.getRowItemBlock(tableView,indexPath) : self.rowItems[indexPath.row];
+    id rowItem = self.getRowItemBlock ? self.getRowItemBlock(tableView,indexPath) : self.rowItems.count > indexPath.row ? self.rowItems[indexPath.row] : nil;
     return rowItem;
 }
 
