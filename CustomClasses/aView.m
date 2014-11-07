@@ -8,6 +8,12 @@
 
 #import "AView.h"
 
+@interface AView ()
+
+@property (nonatomic, readwrite) IBOutlet UIView * contentView;
+
+@end
+
 @implementation AView
 
 - (void)initialize

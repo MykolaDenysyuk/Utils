@@ -10,7 +10,7 @@
 
 @interface AView : UIView
 
-@property (nonatomic) UIView * contentView;
+@property (readonly, nonatomic) UIView * contentView;
 
 - (void)initialize;
 - (void)initializeWithNibName:(NSString *)nibNameOrNil;
