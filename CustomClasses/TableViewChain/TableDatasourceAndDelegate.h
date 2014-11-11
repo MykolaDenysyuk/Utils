@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <UIKit/UIKit.h>
 typedef CGFloat (^TableHeaderFooterHeightBlock)(UITableView* tableView, NSInteger section);
 typedef UIView* (^TableCreateHeaderFooterViewBlock)(UITableView* tableView,NSInteger section);
 typedef void (^TableDidCreateHeaderFooterViewBlock)(UITableView* tableView, NSInteger section, UIView* headerFooterView);

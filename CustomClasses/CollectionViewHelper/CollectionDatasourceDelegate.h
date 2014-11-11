@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 typedef NSInteger (^CollectionNumberOfItemsInSectionBlock)(UICollectionView* collectionView, NSInteger section);
 typedef id (^CollectionItemBlock)(UICollectionViewCell* collectionView, NSIndexPath* indexPath);

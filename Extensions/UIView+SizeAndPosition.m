@@ -42,7 +42,7 @@
 
 - (void)setHeight:(CGFloat)height
 {
-    [self setHeight:CGSizeMake(self.width, height)];
+    [self setSize:CGSizeMake(self.width, height)];
 }
 
 - (void)setXCenter:(CGFloat)xCenter
