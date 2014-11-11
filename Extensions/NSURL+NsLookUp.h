@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface NSURL (NsLookUp)
-
+- (NSString*)lookupHostIPAddressForURL:(NSURL*)url;
 @end
