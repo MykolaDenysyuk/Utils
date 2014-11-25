@@ -35,6 +35,7 @@ typedef void (^TableManipulateWithRowBlock)(UITableView* tableView,id cell,NSInd
 @property (nonatomic) CGFloat defaultHeaderHeight;
 @property (nonatomic) CGFloat defaultFooterHeight;
 @property (nonatomic) CGFloat defaultRowHeight;
+@property (nonatomic) UITableViewCellSelectionStyle cellSelectionStyle;
 
 // Callback requests:
 

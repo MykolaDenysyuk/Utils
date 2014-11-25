@@ -93,12 +93,17 @@
     if (cell == nil) {
         cell = [[self.cellClass alloc] initWithStyle:UITableViewCellStyleDefault
                                      reuseIdentifier:identifier];
+        cell.selectionStyle = self.cellSelectionStyle;
     }
     
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
     if (self.configureCellBlock) {
         self.configureCellBlock(tableView, cell, indexPath, [self retrieveRowItemInTable:tableView forIndexPath:indexPath]);
     }
-    return cell;
 }
 
 #pragma mark - UITableView delegate:
