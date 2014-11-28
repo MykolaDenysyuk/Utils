@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84A58C961A28B613007AAA29 /* NSNotificationCenter+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A58C951A28B613007AAA29 /* NSNotificationCenter+Addition.m */; };
 		84BE11201A12103F00D8E4E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BE111F1A12103F00D8E4E5 /* main.m */; };
 		84BE11231A12103F00D8E4E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BE11221A12103F00D8E4E5 /* AppDelegate.m */; };
 		84BE11261A12103F00D8E4E5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BE11251A12103F00D8E4E5 /* ViewController.m */; };
@@ -57,6 +58,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84A58C941A28B613007AAA29 /* NSNotificationCenter+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+Addition.h"; sourceTree = "<group>"; };
+		84A58C951A28B613007AAA29 /* NSNotificationCenter+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+Addition.m"; sourceTree = "<group>"; };
 		84BE111A1A12103F00D8E4E5 /* Utils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Utils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BE111E1A12103F00D8E4E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84BE111F1A12103F00D8E4E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -313,6 +316,8 @@
 				84BE117D1A12105D00D8E4E5 /* UIView+Snapshot.m */,
 				84BE119A1A1211F400D8E4E5 /* NSURL+NsLookUp.h */,
 				84BE119B1A1211F400D8E4E5 /* NSURL+NsLookUp.m */,
+				84A58C941A28B613007AAA29 /* NSNotificationCenter+Addition.h */,
+				84A58C951A28B613007AAA29 /* NSNotificationCenter+Addition.m */,
 			);
 			name = Extensions;
 			path = ../../Extensions;
@@ -431,6 +436,7 @@
 				84BE11991A12105D00D8E4E5 /* UIView+Snapshot.m in Sources */,
 				84BE118D1A12105D00D8E4E5 /* NSPersistentStoreCoordinator+isMigrationNeeded.m in Sources */,
 				84BE11971A12105D00D8E4E5 /* UIView+SearchSuperview.m in Sources */,
+				84A58C961A28B613007AAA29 /* NSNotificationCenter+Addition.m in Sources */,
 				84BE11821A12105D00D8E4E5 /* CustomEnumerator.m in Sources */,
 				84BE119C1A1211F400D8E4E5 /* NSURL+NsLookUp.m in Sources */,
 				84BE11811A12105D00D8E4E5 /* CollectionDatasourceDelegate.m in Sources */,
