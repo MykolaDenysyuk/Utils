@@ -15,7 +15,7 @@ typedef NSInteger (^TableNumberOfRowsInSection)(UITableView* tableView, NSIntege
 typedef id (^TableRowItem)(UITableView* tableView, NSIndexPath* indexPath);
 typedef CGFloat (^TableRowHeightBlock)(UITableView* tableView,NSIndexPath* indexPath, id rowItem);
 typedef void (^TableManipulateWithRowBlock)(UITableView* tableView,id cell,NSIndexPath* indexPath, id rowItem);
-
+typedef void (^ScrollViewDidScrollBlock)(UIScrollView* scrollView, BOOL willDecelerate);
 
 
 
@@ -49,6 +49,8 @@ typedef void (^TableManipulateWithRowBlock)(UITableView* tableView,id cell,NSInd
 @property (nonatomic, copy) TableRowHeightBlock rowHeightBlock;
 @property (nonatomic, copy) TableManipulateWithRowBlock configureCellBlock;
 @property (nonatomic, copy) TableManipulateWithRowBlock didSelectRowBlock;
+@property (nonatomic, copy) ScrollViewDidScrollBlock scrollViewDidScrollBlock;
+@property (nonatomic, copy) ScrollViewDidScrollBlock scrollViewDidEndDragingBlock;
 
 - (void)setHeaderHeightBlock:(TableHeaderFooterHeightBlock)headerHeightBlock;
 - (void)setFooterHeightBlock:(TableHeaderFooterHeightBlock)footerHeightBlock;
@@ -60,5 +62,7 @@ typedef void (^TableManipulateWithRowBlock)(UITableView* tableView,id cell,NSInd
 - (void)setRowHeightBlock:(TableRowHeightBlock)rowHeightBlock;
 - (void)setConfigureCellBlock:(TableManipulateWithRowBlock)configureCellBlock;
 - (void)setDidSelectRowBlock:(TableManipulateWithRowBlock)didSelectRowBlock;
+- (void)setScrollViewDidScrollBlock:(ScrollViewDidScrollBlock)scrollViewDidScrollBlock;
+- (void)setScrollViewDidEndDragingBlock:(ScrollViewDidScrollBlock)scrollViewDidEndDragingBlock;
 
 @end

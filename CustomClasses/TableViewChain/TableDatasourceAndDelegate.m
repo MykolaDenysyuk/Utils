@@ -188,7 +188,16 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    
+    if (self.scrollViewDidScrollBlock) {
+        self.scrollViewDidScrollBlock(scrollView, NO);
+    }
+}
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+    if (self.scrollViewDidEndDragingBlock) {
+        self.scrollViewDidEndDragingBlock(scrollView, decelerate);
+    }
 }
 
 #pragma mark - Common helpers:
