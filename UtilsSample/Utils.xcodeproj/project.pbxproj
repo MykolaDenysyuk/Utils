@@ -45,6 +45,7 @@
 		84BE119E1A1212F200D8E4E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BE119D1A1212F200D8E4E5 /* Foundation.framework */; };
 		84BE11A01A1212FA00D8E4E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BE119F1A1212FA00D8E4E5 /* UIKit.framework */; };
 		84BE11A21A1212FF00D8E4E5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BE11A11A1212FF00D8E4E5 /* CFNetwork.framework */; };
+		84D20F851A2F4F8400C7286A /* SwipeToMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D20F841A2F4F8400C7286A /* SwipeToMenuViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +132,8 @@
 		84BE119D1A1212F200D8E4E5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		84BE119F1A1212FA00D8E4E5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		84BE11A11A1212FF00D8E4E5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		84D20F831A2F4F8400C7286A /* SwipeToMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeToMenuViewController.h; sourceTree = "<group>"; };
+		84D20F841A2F4F8400C7286A /* SwipeToMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeToMenuViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +224,7 @@
 		84BE11431A12105D00D8E4E5 /* CustomClasses */ = {
 			isa = PBXGroup;
 			children = (
+				84D20F821A2F4F6D00C7286A /* SwipeToMenuViewController */,
 				84BE11441A12105D00D8E4E5 /* aView.h */,
 				84BE11451A12105D00D8E4E5 /* aView.m */,
 				84BE11461A12105D00D8E4E5 /* CircularPorgressBarView.h */,
@@ -321,6 +325,15 @@
 			);
 			name = Extensions;
 			path = ../../Extensions;
+			sourceTree = "<group>";
+		};
+		84D20F821A2F4F6D00C7286A /* SwipeToMenuViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84D20F831A2F4F8400C7286A /* SwipeToMenuViewController.h */,
+				84D20F841A2F4F8400C7286A /* SwipeToMenuViewController.m */,
+			);
+			path = SwipeToMenuViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -429,6 +442,7 @@
 				84BE11881A12105D00D8E4E5 /* RandomPool.m in Sources */,
 				84BE11901A12105D00D8E4E5 /* NSString+RangesOfString.m in Sources */,
 				84BE11921A12105D00D8E4E5 /* UIImage+ImageEffects.m in Sources */,
+				84D20F851A2F4F8400C7286A /* SwipeToMenuViewController.m in Sources */,
 				84BE118F1A12105D00D8E4E5 /* NSString+Ordinal.m in Sources */,
 				84BE118E1A12105D00D8E4E5 /* NSString+Compare.m in Sources */,
 				84BE117F1A12105D00D8E4E5 /* CircularPorgressBarView.m in Sources */,
