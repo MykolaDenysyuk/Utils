@@ -27,6 +27,7 @@
     [[NSBundle mainBundle] loadNibNamed:nibNameOrNil
                                   owner:self
                                 options:nil];
+    NSAssert(self.contentView, @"%@, contentView outlet not assigned! No, realy, what are you waiting to in this view?", self);
     self.contentView.translatesAutoresizingMaskIntoConstraints = YES;
     self.contentView.frame = self.bounds;
     [self addSubview:self.contentView];
