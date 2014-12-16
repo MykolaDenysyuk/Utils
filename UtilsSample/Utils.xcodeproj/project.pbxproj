@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84120B1E1A40434F00B067D3 /* UIView+ColoredNib.m in Sources */ = {isa = PBXBuildFile; fileRef = 84120B1D1A40434F00B067D3 /* UIView+ColoredNib.m */; };
 		84A58C961A28B613007AAA29 /* NSNotificationCenter+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A58C951A28B613007AAA29 /* NSNotificationCenter+Addition.m */; };
 		84BE11201A12103F00D8E4E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BE111F1A12103F00D8E4E5 /* main.m */; };
 		84BE11231A12103F00D8E4E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BE11221A12103F00D8E4E5 /* AppDelegate.m */; };
@@ -59,6 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84120B1C1A40434F00B067D3 /* UIView+ColoredNib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ColoredNib.h"; sourceTree = "<group>"; };
+		84120B1D1A40434F00B067D3 /* UIView+ColoredNib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ColoredNib.m"; sourceTree = "<group>"; };
 		84A58C941A28B613007AAA29 /* NSNotificationCenter+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+Addition.h"; sourceTree = "<group>"; };
 		84A58C951A28B613007AAA29 /* NSNotificationCenter+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+Addition.m"; sourceTree = "<group>"; };
 		84BE111A1A12103F00D8E4E5 /* Utils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Utils.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -322,6 +325,8 @@
 				84BE119B1A1211F400D8E4E5 /* NSURL+NsLookUp.m */,
 				84A58C941A28B613007AAA29 /* NSNotificationCenter+Addition.h */,
 				84A58C951A28B613007AAA29 /* NSNotificationCenter+Addition.m */,
+				84120B1C1A40434F00B067D3 /* UIView+ColoredNib.h */,
+				84120B1D1A40434F00B067D3 /* UIView+ColoredNib.m */,
 			);
 			name = Extensions;
 			path = ../../Extensions;
@@ -464,6 +469,7 @@
 				84BE11981A12105D00D8E4E5 /* UIView+SizeAndPosition.m in Sources */,
 				84BE11941A12105D00D8E4E5 /* UIView+Animation.m in Sources */,
 				84BE11961A12105D00D8E4E5 /* UIView+onDrawRectBlock.m in Sources */,
+				84120B1E1A40434F00B067D3 /* UIView+ColoredNib.m in Sources */,
 				84BE118A1A12105D00D8E4E5 /* TableDatasourceAndDelegate.m in Sources */,
 				84BE11871A12105D00D8E4E5 /* ProgressIndicator.m in Sources */,
 				84BE11201A12103F00D8E4E5 /* main.m in Sources */,
