@@ -10,25 +10,25 @@
 
 @interface UIView (ColoredNib)
 
-@property (nonatomic) NSString * backgroundColorName;
+@property (nonatomic) IBInspectable NSString * backgroundColorName;
 
 @end
 
 
 @interface UILabel (ColoredNib)
 
-@property (nonatomic) NSString * textColorName;
+@property (nonatomic) IBInspectable NSString * textColorName;
 
 @end
 
 @interface UIButton (ColoredNib)
 
-@property (nonatomic) NSString * textColorName;
+@property (nonatomic) IBInspectable NSString * textColorName;
 
 @end
 
 @interface UITextField (ColoredNib)
 
-@property (nonatomic) NSString * textColorName;
+@property (nonatomic) IBInspectable NSString * textColorName;
 
 @end
