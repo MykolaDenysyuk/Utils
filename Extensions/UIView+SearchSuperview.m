@@ -10,7 +10,7 @@
 
 @implementation UIView (SearchSuperview)
 
-// Performance heave
+// Performance heavy
 
 - (UIView *)superviewWithClassKind:(Class)superviewClass
 {
