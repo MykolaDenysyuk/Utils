@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6FE37D8B1A339F22000D69ED /* ScrollViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE37D8A1A339F22000D69ED /* ScrollViewDelegate.m */; };
+		84120B1E1A40434F00B067D3 /* UIView+ColoredNib.m in Sources */ = {isa = PBXBuildFile; fileRef = 84120B1D1A40434F00B067D3 /* UIView+ColoredNib.m */; };
 		84A58C961A28B613007AAA29 /* NSNotificationCenter+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A58C951A28B613007AAA29 /* NSNotificationCenter+Addition.m */; };
 		84BE11201A12103F00D8E4E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BE111F1A12103F00D8E4E5 /* main.m */; };
 		84BE11231A12103F00D8E4E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BE11221A12103F00D8E4E5 /* AppDelegate.m */; };
@@ -46,6 +47,8 @@
 		84BE119E1A1212F200D8E4E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BE119D1A1212F200D8E4E5 /* Foundation.framework */; };
 		84BE11A01A1212FA00D8E4E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BE119F1A1212FA00D8E4E5 /* UIKit.framework */; };
 		84BE11A21A1212FF00D8E4E5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BE11A11A1212FF00D8E4E5 /* CFNetwork.framework */; };
+		84C2DA8F1A654445002C2E59 /* ViewAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2DA8E1A654445002C2E59 /* ViewAnimator.m */; };
+		84C2DA921A654517002C2E59 /* SpinViewAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2DA911A654517002C2E59 /* SpinViewAnimator.m */; };
 		84D20F851A2F4F8400C7286A /* SwipeToMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D20F841A2F4F8400C7286A /* SwipeToMenuViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +65,8 @@
 /* Begin PBXFileReference section */
 		6FE37D891A339F22000D69ED /* ScrollViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewDelegate.h; sourceTree = "<group>"; };
 		6FE37D8A1A339F22000D69ED /* ScrollViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewDelegate.m; sourceTree = "<group>"; };
+		84120B1C1A40434F00B067D3 /* UIView+ColoredNib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ColoredNib.h"; sourceTree = "<group>"; };
+		84120B1D1A40434F00B067D3 /* UIView+ColoredNib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ColoredNib.m"; sourceTree = "<group>"; };
 		84A58C941A28B613007AAA29 /* NSNotificationCenter+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+Addition.h"; sourceTree = "<group>"; };
 		84A58C951A28B613007AAA29 /* NSNotificationCenter+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+Addition.m"; sourceTree = "<group>"; };
 		84BE111A1A12103F00D8E4E5 /* Utils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Utils.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,6 +140,10 @@
 		84BE119D1A1212F200D8E4E5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		84BE119F1A1212FA00D8E4E5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		84BE11A11A1212FF00D8E4E5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		84C2DA8D1A654445002C2E59 /* ViewAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewAnimator.h; sourceTree = "<group>"; };
+		84C2DA8E1A654445002C2E59 /* ViewAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewAnimator.m; sourceTree = "<group>"; };
+		84C2DA901A654517002C2E59 /* SpinViewAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpinViewAnimator.h; sourceTree = "<group>"; };
+		84C2DA911A654517002C2E59 /* SpinViewAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpinViewAnimator.m; sourceTree = "<group>"; };
 		84D20F831A2F4F8400C7286A /* SwipeToMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeToMenuViewController.h; sourceTree = "<group>"; };
 		84D20F841A2F4F8400C7286A /* SwipeToMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeToMenuViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -237,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				6FE37D881A339EC9000D69ED /* BlocksDatasourceAndDelegate */,
+				84C2DA8C1A654438002C2E59 /* Animator */,
 				84D20F821A2F4F6D00C7286A /* SwipeToMenuViewController */,
 				84BE11441A12105D00D8E4E5 /* aView.h */,
 				84BE11451A12105D00D8E4E5 /* aView.m */,
@@ -335,9 +345,22 @@
 				84BE119B1A1211F400D8E4E5 /* NSURL+NsLookUp.m */,
 				84A58C941A28B613007AAA29 /* NSNotificationCenter+Addition.h */,
 				84A58C951A28B613007AAA29 /* NSNotificationCenter+Addition.m */,
+				84120B1C1A40434F00B067D3 /* UIView+ColoredNib.h */,
+				84120B1D1A40434F00B067D3 /* UIView+ColoredNib.m */,
 			);
 			name = Extensions;
 			path = ../../Extensions;
+			sourceTree = "<group>";
+		};
+		84C2DA8C1A654438002C2E59 /* Animator */ = {
+			isa = PBXGroup;
+			children = (
+				84C2DA8D1A654445002C2E59 /* ViewAnimator.h */,
+				84C2DA8E1A654445002C2E59 /* ViewAnimator.m */,
+				84C2DA901A654517002C2E59 /* SpinViewAnimator.h */,
+				84C2DA911A654517002C2E59 /* SpinViewAnimator.m */,
+			);
+			path = Animator;
 			sourceTree = "<group>";
 		};
 		84D20F821A2F4F6D00C7286A /* SwipeToMenuViewController */ = {
@@ -469,6 +492,7 @@
 				84BE119C1A1211F400D8E4E5 /* NSURL+NsLookUp.m in Sources */,
 				84BE11811A12105D00D8E4E5 /* CollectionDatasourceDelegate.m in Sources */,
 				84BE11951A12105D00D8E4E5 /* UIView+Drawing.m in Sources */,
+				84C2DA8F1A654445002C2E59 /* ViewAnimator.m in Sources */,
 				84BE11911A12105D00D8E4E5 /* NSString+Validation.m in Sources */,
 				84BE11231A12103F00D8E4E5 /* AppDelegate.m in Sources */,
 				84BE117E1A12105D00D8E4E5 /* aView.m in Sources */,
@@ -478,8 +502,10 @@
 				84BE11981A12105D00D8E4E5 /* UIView+SizeAndPosition.m in Sources */,
 				84BE11941A12105D00D8E4E5 /* UIView+Animation.m in Sources */,
 				84BE11961A12105D00D8E4E5 /* UIView+onDrawRectBlock.m in Sources */,
+				84120B1E1A40434F00B067D3 /* UIView+ColoredNib.m in Sources */,
 				84BE118A1A12105D00D8E4E5 /* TableDatasourceAndDelegate.m in Sources */,
 				84BE11871A12105D00D8E4E5 /* ProgressIndicator.m in Sources */,
+				84C2DA921A654517002C2E59 /* SpinViewAnimator.m in Sources */,
 				84BE11201A12103F00D8E4E5 /* main.m in Sources */,
 				84BE11931A12105D00D8E4E5 /* UIImage+ImageTemplate.m in Sources */,
 			);
@@ -605,10 +631,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				INFOPLIST_FILE = Utils/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -616,10 +645,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				INFOPLIST_FILE = Utils/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

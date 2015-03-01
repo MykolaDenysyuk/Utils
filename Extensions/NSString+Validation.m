@@ -1,6 +1,6 @@
 //
 //  NSString+Validation.m
-//  
+//
 //
 //  Created by Mykola Denysyuk on 7/18/13.
 //  Copyright (c) 2013 Mykola Denysyuk. All rights reserved.
@@ -9,7 +9,7 @@
 #define EMAIL_REGEX @"\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*"
 #define PHONE_REGEX @"^\\(?([0-9]{3})\\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$"
 #define ZIPCODE_REGEX @"^\\d{5}(?:[-\\s]\\d{4})?$"
-
+#define NUMERIC_REGEX @"^[-]?[0-9]*(.[0-9]*)?$"
 
 #import "NSString+Validation.h"
 
@@ -28,6 +28,11 @@
 - (BOOL)validateZipCode
 {
     return [self validateWithRegEx:ZIPCODE_REGEX];
+}
+
+- (BOOL)validateNumericValue
+{
+    return [self validateWithRegEx:NUMERIC_REGEX];
 }
 
 #pragma mark - private

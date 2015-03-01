@@ -16,4 +16,6 @@
 
 - (BOOL)validateZipCode;
 
+- (BOOL)validateNumericValue;
+
 @end

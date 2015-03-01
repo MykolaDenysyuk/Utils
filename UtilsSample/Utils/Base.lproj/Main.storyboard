@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
-        <!--Swipe To Menu View Controller-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SwipeToMenuViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,12 +16,59 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CP7-RJ-vvk">
+                                <rect key="frame" x="248" y="375" width="105" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Start animation">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JMb-zo-hhI"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="load1" translatesAutoresizingMaskIntoConstraints="NO" id="CZC-zM-Ox4">
+                                <rect key="frame" x="150" y="40" width="300" height="300"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="6rt-8T-yS1"/>
+                                    <constraint firstAttribute="height" constant="300" id="QtP-51-nrh"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="HdE-V4-fZ4" appends="YES" id="XA6-GQ-YZg"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CP7-RJ-vvk" firstAttribute="top" secondItem="CZC-zM-Ox4" secondAttribute="bottom" constant="35" id="Vuk-P3-0LC"/>
+                            <constraint firstItem="CZC-zM-Ox4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="cZS-Is-636"/>
+                            <constraint firstItem="CZC-zM-Ox4" firstAttribute="centerX" secondItem="CP7-RJ-vvk" secondAttribute="centerX" id="eje-tI-Fj4"/>
+                            <constraint firstAttribute="centerX" secondItem="CZC-zM-Ox4" secondAttribute="centerX" id="eub-8H-JAv"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="_animator" destination="eRa-jb-kzW" id="HZ2-xo-6z1"/>
+                        <outlet property="_imageView" destination="CZC-zM-Ox4" id="wp8-az-U1u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="HdE-V4-fZ4">
+                    <connections>
+                        <action selector="swipeAction:" destination="BYZ-38-t0r" id="0gx-tF-TGA"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <customObject id="eRa-jb-kzW" customClass="SpinViewAnimator">
+                    <connections>
+                        <outlet property="_view" destination="CZC-zM-Ox4" id="Ipd-ZB-kZE"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="476" y="416"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="load1" width="160" height="160"/>
+    </resources>
 </document>
