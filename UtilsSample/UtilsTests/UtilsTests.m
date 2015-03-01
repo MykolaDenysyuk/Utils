@@ -37,4 +37,30 @@
     }];
 }
 
+- (void)testArrays{
+    
+#define aNumber 0x000abbbbbbbbcccc
+    
+    NSNumber * firstNumberVar = @(aNumber);
+    NSNumber * secondsNumberVar = @(aNumber);
+    NSNumber * thirdNumberVar = @(aNumber);
+    NSNumber * forthNumberVar = @(aNumber);
+    
+    BOOL isSame = firstNumberVar == secondsNumberVar;
+    isSame = secondsNumberVar == thirdNumberVar;
+    isSame = thirdNumberVar == forthNumberVar;
+    isSame = forthNumberVar == firstNumberVar;
+    
+    NSDictionary * values = NSDictionaryOfVariableBindings(firstNumberVar, secondsNumberVar, thirdNumberVar, forthNumberVar);
+    NSArray * numbers = values.allValues;//@[firstNumberVar, secondsNumberVar, thirdNumberVar, forthNumberVar];
+    
+    [values enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+        
+        BOOL isContain = [numbers containsObject:obj];
+        
+        NSLog(@"%@ <%p>: %@. numbers contains object: %@", key, obj, obj, isContain ? @"YES":@"NO");
+    }];
+    
+}
+
 @end
