@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84068C2C1A83D9A70067AA5B /* UIImage+ImageFromColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 84068C2B1A83D9A70067AA5B /* UIImage+ImageFromColor.m */; };
 		84120B1E1A40434F00B067D3 /* UIView+ColoredNib.m in Sources */ = {isa = PBXBuildFile; fileRef = 84120B1D1A40434F00B067D3 /* UIView+ColoredNib.m */; };
+		841C96B31AB04D9400D815E8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841C96B21AB04D9400D815E8 /* MapKit.framework */; };
+		841C96B61AB04DC500D815E8 /* MKMapView+ZoomLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 841C96B51AB04DC500D815E8 /* MKMapView+ZoomLevel.m */; };
 		84A58C961A28B613007AAA29 /* NSNotificationCenter+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A58C951A28B613007AAA29 /* NSNotificationCenter+Addition.m */; };
 		84BE11201A12103F00D8E4E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BE111F1A12103F00D8E4E5 /* main.m */; };
 		84BE11231A12103F00D8E4E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BE11221A12103F00D8E4E5 /* AppDelegate.m */; };
@@ -62,8 +65,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84068C2A1A83D9A70067AA5B /* UIImage+ImageFromColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageFromColor.h"; sourceTree = "<group>"; };
+		84068C2B1A83D9A70067AA5B /* UIImage+ImageFromColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageFromColor.m"; sourceTree = "<group>"; };
 		84120B1C1A40434F00B067D3 /* UIView+ColoredNib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ColoredNib.h"; sourceTree = "<group>"; };
 		84120B1D1A40434F00B067D3 /* UIView+ColoredNib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ColoredNib.m"; sourceTree = "<group>"; };
+		841C96B21AB04D9400D815E8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		841C96B41AB04DC500D815E8 /* MKMapView+ZoomLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+ZoomLevel.h"; sourceTree = "<group>"; };
+		841C96B51AB04DC500D815E8 /* MKMapView+ZoomLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+ZoomLevel.m"; sourceTree = "<group>"; };
 		84A58C941A28B613007AAA29 /* NSNotificationCenter+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+Addition.h"; sourceTree = "<group>"; };
 		84A58C951A28B613007AAA29 /* NSNotificationCenter+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+Addition.m"; sourceTree = "<group>"; };
 		84BE111A1A12103F00D8E4E5 /* Utils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Utils.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,6 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841C96B31AB04D9400D815E8 /* MapKit.framework in Frameworks */,
 				84BE11A21A1212FF00D8E4E5 /* CFNetwork.framework in Frameworks */,
 				84BE11A01A1212FA00D8E4E5 /* UIKit.framework in Frameworks */,
 				84BE119E1A1212F200D8E4E5 /* Foundation.framework in Frameworks */,
@@ -169,6 +178,7 @@
 		84BE11111A12103F00D8E4E5 = {
 			isa = PBXGroup;
 			children = (
+				841C96B21AB04D9400D815E8 /* MapKit.framework */,
 				84BE11A11A1212FF00D8E4E5 /* CFNetwork.framework */,
 				84BE119F1A1212FA00D8E4E5 /* UIKit.framework */,
 				84BE119D1A1212F200D8E4E5 /* Foundation.framework */,
@@ -334,6 +344,10 @@
 				84A58C951A28B613007AAA29 /* NSNotificationCenter+Addition.m */,
 				84120B1C1A40434F00B067D3 /* UIView+ColoredNib.h */,
 				84120B1D1A40434F00B067D3 /* UIView+ColoredNib.m */,
+				84068C2A1A83D9A70067AA5B /* UIImage+ImageFromColor.h */,
+				84068C2B1A83D9A70067AA5B /* UIImage+ImageFromColor.m */,
+				841C96B41AB04DC500D815E8 /* MKMapView+ZoomLevel.h */,
+				841C96B51AB04DC500D815E8 /* MKMapView+ZoomLevel.m */,
 			);
 			name = Extensions;
 			path = ../../Extensions;
@@ -489,6 +503,8 @@
 				84BE11941A12105D00D8E4E5 /* UIView+Animation.m in Sources */,
 				84BE11961A12105D00D8E4E5 /* UIView+onDrawRectBlock.m in Sources */,
 				84120B1E1A40434F00B067D3 /* UIView+ColoredNib.m in Sources */,
+				841C96B61AB04DC500D815E8 /* MKMapView+ZoomLevel.m in Sources */,
+				84068C2C1A83D9A70067AA5B /* UIImage+ImageFromColor.m in Sources */,
 				84BE118A1A12105D00D8E4E5 /* TableDatasourceAndDelegate.m in Sources */,
 				84BE11871A12105D00D8E4E5 /* ProgressIndicator.m in Sources */,
 				84C2DA921A654517002C2E59 /* SpinViewAnimator.m in Sources */,
