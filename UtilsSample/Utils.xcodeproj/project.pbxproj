@@ -51,6 +51,7 @@
 		84BE11A21A1212FF00D8E4E5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BE11A11A1212FF00D8E4E5 /* CFNetwork.framework */; };
 		84C2DA8F1A654445002C2E59 /* ViewAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2DA8E1A654445002C2E59 /* ViewAnimator.m */; };
 		84C2DA921A654517002C2E59 /* SpinViewAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2DA911A654517002C2E59 /* SpinViewAnimator.m */; };
+		84CF90F21AB9B30D00E7AE9D /* UIResponder+FirstResponer.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CF90F11AB9B30D00E7AE9D /* UIResponder+FirstResponer.m */; };
 		84D20F851A2F4F8400C7286A /* SwipeToMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D20F841A2F4F8400C7286A /* SwipeToMenuViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -151,6 +152,8 @@
 		84C2DA8E1A654445002C2E59 /* ViewAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewAnimator.m; sourceTree = "<group>"; };
 		84C2DA901A654517002C2E59 /* SpinViewAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpinViewAnimator.h; sourceTree = "<group>"; };
 		84C2DA911A654517002C2E59 /* SpinViewAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpinViewAnimator.m; sourceTree = "<group>"; };
+		84CF90F01AB9B30D00E7AE9D /* UIResponder+FirstResponer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+FirstResponer.h"; sourceTree = "<group>"; };
+		84CF90F11AB9B30D00E7AE9D /* UIResponder+FirstResponer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+FirstResponer.m"; sourceTree = "<group>"; };
 		84D20F831A2F4F8400C7286A /* SwipeToMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeToMenuViewController.h; sourceTree = "<group>"; };
 		84D20F841A2F4F8400C7286A /* SwipeToMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeToMenuViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -360,6 +363,8 @@
 				84068C2B1A83D9A70067AA5B /* UIImage+ImageFromColor.m */,
 				841C96B41AB04DC500D815E8 /* MKMapView+ZoomLevel.h */,
 				841C96B51AB04DC500D815E8 /* MKMapView+ZoomLevel.m */,
+				84CF90F01AB9B30D00E7AE9D /* UIResponder+FirstResponer.h */,
+				84CF90F11AB9B30D00E7AE9D /* UIResponder+FirstResponer.m */,
 			);
 			name = Extensions;
 			path = ../../Extensions;
@@ -517,12 +522,12 @@
 				84BE11961A12105D00D8E4E5 /* UIView+onDrawRectBlock.m in Sources */,
 				84120B1E1A40434F00B067D3 /* UIView+ColoredNib.m in Sources */,
 				841C96B61AB04DC500D815E8 /* MKMapView+ZoomLevel.m in Sources */,
-				84068C2C1A83D9A70067AA5B /* UIImage+ImageFromColor.m in Sources */,
 				84BE118A1A12105D00D8E4E5 /* TableDatasourceAndDelegate.m in Sources */,
 				84BE11871A12105D00D8E4E5 /* ProgressIndicator.m in Sources */,
 				84C2DA921A654517002C2E59 /* SpinViewAnimator.m in Sources */,
 				84BE11201A12103F00D8E4E5 /* main.m in Sources */,
 				84BE11931A12105D00D8E4E5 /* UIImage+ImageTemplate.m in Sources */,
+				84CF90F21AB9B30D00E7AE9D /* UIResponder+FirstResponer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
