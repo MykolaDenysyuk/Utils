@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		84068C2C1A83D9A70067AA5B /* UIImage+ImageFromColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 84068C2B1A83D9A70067AA5B /* UIImage+ImageFromColor.m */; };
+		6FE37D8B1A339F22000D69ED /* ScrollViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE37D8A1A339F22000D69ED /* ScrollViewDelegate.m */; };
 		84120B1E1A40434F00B067D3 /* UIView+ColoredNib.m in Sources */ = {isa = PBXBuildFile; fileRef = 84120B1D1A40434F00B067D3 /* UIView+ColoredNib.m */; };
 		841C96B31AB04D9400D815E8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841C96B21AB04D9400D815E8 /* MapKit.framework */; };
 		841C96B61AB04DC500D815E8 /* MKMapView+ZoomLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 841C96B51AB04DC500D815E8 /* MKMapView+ZoomLevel.m */; };
@@ -65,6 +65,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6FE37D891A339F22000D69ED /* ScrollViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewDelegate.h; sourceTree = "<group>"; };
+		6FE37D8A1A339F22000D69ED /* ScrollViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewDelegate.m; sourceTree = "<group>"; };
 		84068C2A1A83D9A70067AA5B /* UIImage+ImageFromColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageFromColor.h"; sourceTree = "<group>"; };
 		84068C2B1A83D9A70067AA5B /* UIImage+ImageFromColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageFromColor.m"; sourceTree = "<group>"; };
 		84120B1C1A40434F00B067D3 /* UIView+ColoredNib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ColoredNib.h"; sourceTree = "<group>"; };
@@ -175,6 +177,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6FE37D881A339EC9000D69ED /* BlocksDatasourceAndDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				6FE37D891A339F22000D69ED /* ScrollViewDelegate.h */,
+				6FE37D8A1A339F22000D69ED /* ScrollViewDelegate.m */,
+			);
+			path = BlocksDatasourceAndDelegate;
+			sourceTree = "<group>";
+		};
 		84BE11111A12103F00D8E4E5 = {
 			isa = PBXGroup;
 			children = (
@@ -243,6 +254,7 @@
 		84BE11431A12105D00D8E4E5 /* CustomClasses */ = {
 			isa = PBXGroup;
 			children = (
+				6FE37D881A339EC9000D69ED /* BlocksDatasourceAndDelegate */,
 				84C2DA8C1A654438002C2E59 /* Animator */,
 				84D20F821A2F4F6D00C7286A /* SwipeToMenuViewController */,
 				84BE11441A12105D00D8E4E5 /* aView.h */,
@@ -478,6 +490,7 @@
 			files = (
 				84BE11881A12105D00D8E4E5 /* RandomPool.m in Sources */,
 				84BE11901A12105D00D8E4E5 /* NSString+RangesOfString.m in Sources */,
+				6FE37D8B1A339F22000D69ED /* ScrollViewDelegate.m in Sources */,
 				84BE11921A12105D00D8E4E5 /* UIImage+ImageEffects.m in Sources */,
 				84D20F851A2F4F8400C7286A /* SwipeToMenuViewController.m in Sources */,
 				84BE118F1A12105D00D8E4E5 /* NSString+Ordinal.m in Sources */,
