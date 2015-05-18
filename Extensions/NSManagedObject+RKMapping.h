@@ -17,4 +17,6 @@
 
 + (RKObjectMapping*)objectMappingForManagedObjectStore:(RKManagedObjectStore*)store;
 
++ (NSString *)entityName;
+
 @end
