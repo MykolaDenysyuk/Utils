@@ -16,9 +16,9 @@ typedef void(^ActionBlock)(id* object);
 @end
 
 /**
- Action incapsulate object behavoir. Set 'targetDelegate' or 'actionBlock' and pass it to any other object where it could be executed via 'execute:'.
+ Object wrapper for action (via block or via delegation).
+ Set 'targetDelegate' or 'actionBlock' to transmit action.
  */
-
 @interface Action : NSObject
 
 @property (readonly, nonatomic, weak) id<ActionExecuteDelegate> targetDelegate;
@@ -30,9 +30,8 @@ typedef void(^ActionBlock)(id* object);
 + (instancetype)actionWithBlock:(ActionBlock)actionBlock;
 
 /**
- Will delegate execution to 'targetDelegate' or perform 'actionBlock' if they are exsit. Override this method to incapsulate other extended action behavoir
+ Will delegate execution to 'targetDelegate' or perform 'actionBlock' if they exist. Override this method to incapsulate other extended action behavoir
  */
-
 - (void)execute:(id*)parameter;
 
 @end
