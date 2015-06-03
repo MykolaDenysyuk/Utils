@@ -23,15 +23,14 @@
     
     // check if all items in self situated in required positions
     
-    NSMutableArray * orderCheckList = [self isKindOfClass:[NSMutableArray class]]?self:self.mutableCopy;
+    NSMutableArray * orderCheckList = self.mutableCopy;
     
     NSNumber * currentItem = nil;
     for (; orderCheckList.count>0 ;)
     {
         currentItem = orderCheckList.firstObject;
         if (currentItem)[orderCheckList removeObjectAtIndex:0];
-        NSNumber* nextItem = orderCheckList.firstObject;
-        if (nextItem)
+        for (NSNumber* nextItem in orderCheckList)
         {
             NSNumber* currentOrder = orderMapping[[self p_keyForObject:currentItem]];
             NSNumber* nextOrder = orderMapping[[self p_keyForObject:nextItem]];
@@ -41,6 +40,8 @@
                 break;
             }
         }
+        if (isOrderEqual == NO)
+            break;
     }
     return isOrderEqual;
 }
