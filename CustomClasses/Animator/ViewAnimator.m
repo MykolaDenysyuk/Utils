@@ -9,6 +9,7 @@
 #import "ViewAnimator.h"
 #import <UIKit/UIView.h>
 #import <UIKit/UINibLoading.h>
+#import <UIKit/UIApplication.h>
 
 @interface ViewAnimator ()
 {

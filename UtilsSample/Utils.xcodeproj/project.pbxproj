@@ -12,6 +12,8 @@
 		841C96B31AB04D9400D815E8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841C96B21AB04D9400D815E8 /* MapKit.framework */; };
 		841C96B61AB04DC500D815E8 /* MKMapView+ZoomLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 841C96B51AB04DC500D815E8 /* MKMapView+ZoomLevel.m */; };
 		8441F5261B13402C00E465E3 /* UIView+Scale.m in Sources */ = {isa = PBXBuildFile; fileRef = 8441F5251B13402C00E465E3 /* UIView+Scale.m */; };
+		8485351B1B32DE4500796536 /* XPhoneFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8485351A1B32DE4500796536 /* XPhoneFormatter.m */; };
+		8485351E1B32E55D00796536 /* XPhoneFormatterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8485351D1B32E55D00796536 /* XPhoneFormatterTest.m */; };
 		84A58C961A28B613007AAA29 /* NSNotificationCenter+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A58C951A28B613007AAA29 /* NSNotificationCenter+Addition.m */; };
 		84BE11201A12103F00D8E4E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BE111F1A12103F00D8E4E5 /* main.m */; };
 		84BE11231A12103F00D8E4E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BE11221A12103F00D8E4E5 /* AppDelegate.m */; };
@@ -78,6 +80,9 @@
 		841C96B51AB04DC500D815E8 /* MKMapView+ZoomLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+ZoomLevel.m"; sourceTree = "<group>"; };
 		8441F5241B13402C00E465E3 /* UIView+Scale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Scale.h"; sourceTree = "<group>"; };
 		8441F5251B13402C00E465E3 /* UIView+Scale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Scale.m"; sourceTree = "<group>"; };
+		848535191B32DE4500796536 /* XPhoneFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPhoneFormatter.h; sourceTree = "<group>"; };
+		8485351A1B32DE4500796536 /* XPhoneFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPhoneFormatter.m; sourceTree = "<group>"; };
+		8485351D1B32E55D00796536 /* XPhoneFormatterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPhoneFormatterTest.m; sourceTree = "<group>"; };
 		84A58C941A28B613007AAA29 /* NSNotificationCenter+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+Addition.h"; sourceTree = "<group>"; };
 		84A58C951A28B613007AAA29 /* NSNotificationCenter+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+Addition.m"; sourceTree = "<group>"; };
 		84BE111A1A12103F00D8E4E5 /* Utils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Utils.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -192,6 +197,15 @@
 			path = BlocksDatasourceAndDelegate;
 			sourceTree = "<group>";
 		};
+		848535181B32DE0400796536 /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				848535191B32DE4500796536 /* XPhoneFormatter.h */,
+				8485351A1B32DE4500796536 /* XPhoneFormatter.m */,
+			);
+			path = Formatters;
+			sourceTree = "<group>";
+		};
 		84BE11111A12103F00D8E4E5 = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				84BE11391A12104000D8E4E5 /* UtilsTests.m */,
+				8485351D1B32E55D00796536 /* XPhoneFormatterTest.m */,
 				84BE11371A12104000D8E4E5 /* Supporting Files */,
 			);
 			path = UtilsTests;
@@ -260,6 +275,7 @@
 		84BE11431A12105D00D8E4E5 /* CustomClasses */ = {
 			isa = PBXGroup;
 			children = (
+				848535181B32DE0400796536 /* Formatters */,
 				6FE37D881A339EC9000D69ED /* BlocksDatasourceAndDelegate */,
 				84C2DA8C1A654438002C2E59 /* Animator */,
 				84D20F821A2F4F6D00C7286A /* SwipeToMenuViewController */,
@@ -515,6 +531,7 @@
 				84BE119C1A1211F400D8E4E5 /* NSURL+NsLookUp.m in Sources */,
 				84BE11811A12105D00D8E4E5 /* CollectionDatasourceDelegate.m in Sources */,
 				84BE11951A12105D00D8E4E5 /* UIView+Drawing.m in Sources */,
+				8485351B1B32DE4500796536 /* XPhoneFormatter.m in Sources */,
 				84C2DA8F1A654445002C2E59 /* ViewAnimator.m in Sources */,
 				84BE11911A12105D00D8E4E5 /* NSString+Validation.m in Sources */,
 				84BE11231A12103F00D8E4E5 /* AppDelegate.m in Sources */,
@@ -541,6 +558,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8485351E1B32E55D00796536 /* XPhoneFormatterTest.m in Sources */,
 				84BE113A1A12104000D8E4E5 /* UtilsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
