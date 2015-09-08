@@ -56,6 +56,7 @@
 		84C2DA921A654517002C2E59 /* SpinViewAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2DA911A654517002C2E59 /* SpinViewAnimator.m */; };
 		84CF90F21AB9B30D00E7AE9D /* UIResponder+FirstResponer.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CF90F11AB9B30D00E7AE9D /* UIResponder+FirstResponer.m */; };
 		84D20F851A2F4F8400C7286A /* SwipeToMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D20F841A2F4F8400C7286A /* SwipeToMenuViewController.m */; };
+		F3A12B3B1B9F3D7F009F4AA2 /* NSUserDefaults+ArchievedObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A12B3A1B9F3D7F009F4AA2 /* NSUserDefaults+ArchievedObjects.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,6 +165,8 @@
 		84CF90F11AB9B30D00E7AE9D /* UIResponder+FirstResponer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+FirstResponer.m"; sourceTree = "<group>"; };
 		84D20F831A2F4F8400C7286A /* SwipeToMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeToMenuViewController.h; sourceTree = "<group>"; };
 		84D20F841A2F4F8400C7286A /* SwipeToMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeToMenuViewController.m; sourceTree = "<group>"; };
+		F3A12B391B9F3D7F009F4AA2 /* NSUserDefaults+ArchievedObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+ArchievedObjects.h"; sourceTree = "<group>"; };
+		F3A12B3A1B9F3D7F009F4AA2 /* NSUserDefaults+ArchievedObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+ArchievedObjects.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -386,6 +389,8 @@
 				841C96B51AB04DC500D815E8 /* MKMapView+ZoomLevel.m */,
 				84CF90F01AB9B30D00E7AE9D /* UIResponder+FirstResponer.h */,
 				84CF90F11AB9B30D00E7AE9D /* UIResponder+FirstResponer.m */,
+				F3A12B391B9F3D7F009F4AA2 /* NSUserDefaults+ArchievedObjects.h */,
+				F3A12B3A1B9F3D7F009F4AA2 /* NSUserDefaults+ArchievedObjects.m */,
 			);
 			name = Extensions;
 			path = ../../Extensions;
@@ -530,6 +535,7 @@
 				84BE11821A12105D00D8E4E5 /* CustomEnumerator.m in Sources */,
 				84BE119C1A1211F400D8E4E5 /* NSURL+NsLookUp.m in Sources */,
 				84BE11811A12105D00D8E4E5 /* CollectionDatasourceDelegate.m in Sources */,
+				F3A12B3B1B9F3D7F009F4AA2 /* NSUserDefaults+ArchievedObjects.m in Sources */,
 				84BE11951A12105D00D8E4E5 /* UIView+Drawing.m in Sources */,
 				8485351B1B32DE4500796536 /* XPhoneFormatter.m in Sources */,
 				84C2DA8F1A654445002C2E59 /* ViewAnimator.m in Sources */,
