@@ -11,5 +11,6 @@
 @interface UIViewController (AddContainerController)
 
 - (void)addChildContainerController:(UIViewController *)childController;
+- (void)addChildContainerController:(UIViewController *)childController insideSubview:(UIView *)subview;
 
 @end

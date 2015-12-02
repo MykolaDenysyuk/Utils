@@ -57,6 +57,7 @@
 		84CF90F21AB9B30D00E7AE9D /* UIResponder+FirstResponer.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CF90F11AB9B30D00E7AE9D /* UIResponder+FirstResponer.m */; };
 		84D20F851A2F4F8400C7286A /* SwipeToMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D20F841A2F4F8400C7286A /* SwipeToMenuViewController.m */; };
 		F312D6D81BAAF7CC00B85604 /* UITableView+VisibleSections.m in Sources */ = {isa = PBXBuildFile; fileRef = F312D6D71BAAF7CC00B85604 /* UITableView+VisibleSections.m */; };
+		F3148A4A1C0EFE17008A8AC1 /* UIViewController+AddContainerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3148A491C0EFE17008A8AC1 /* UIViewController+AddContainerController.m */; };
 		F3A12B3B1B9F3D7F009F4AA2 /* NSUserDefaults+ArchievedObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A12B3A1B9F3D7F009F4AA2 /* NSUserDefaults+ArchievedObjects.m */; };
 /* End PBXBuildFile section */
 
@@ -168,6 +169,8 @@
 		84D20F841A2F4F8400C7286A /* SwipeToMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeToMenuViewController.m; sourceTree = "<group>"; };
 		F312D6D61BAAF7CC00B85604 /* UITableView+VisibleSections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+VisibleSections.h"; sourceTree = "<group>"; };
 		F312D6D71BAAF7CC00B85604 /* UITableView+VisibleSections.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+VisibleSections.m"; sourceTree = "<group>"; };
+		F3148A481C0EFE17008A8AC1 /* UIViewController+AddContainerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AddContainerController.h"; sourceTree = "<group>"; };
+		F3148A491C0EFE17008A8AC1 /* UIViewController+AddContainerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AddContainerController.m"; sourceTree = "<group>"; };
 		F3A12B391B9F3D7F009F4AA2 /* NSUserDefaults+ArchievedObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+ArchievedObjects.h"; sourceTree = "<group>"; };
 		F3A12B3A1B9F3D7F009F4AA2 /* NSUserDefaults+ArchievedObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+ArchievedObjects.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -348,8 +351,12 @@
 		84BE115F1A12105D00D8E4E5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				841C96B41AB04DC500D815E8 /* MKMapView+ZoomLevel.h */,
+				841C96B51AB04DC500D815E8 /* MKMapView+ZoomLevel.m */,
 				84BE11601A12105D00D8E4E5 /* NSManagedObject+RKMapping.h */,
 				84BE11611A12105D00D8E4E5 /* NSManagedObject+RKMapping.m */,
+				84A58C941A28B613007AAA29 /* NSNotificationCenter+Addition.h */,
+				84A58C951A28B613007AAA29 /* NSNotificationCenter+Addition.m */,
 				84BE11621A12105D00D8E4E5 /* NSObject+RKMapping.h */,
 				84BE11631A12105D00D8E4E5 /* NSObject+RKMapping.m */,
 				84BE11641A12105D00D8E4E5 /* NSPersistentStoreCoordinator+isMigrationNeeded.h */,
@@ -362,40 +369,38 @@
 				84BE116B1A12105D00D8E4E5 /* NSString+RangesOfString.m */,
 				84BE116C1A12105D00D8E4E5 /* NSString+Validation.h */,
 				84BE116D1A12105D00D8E4E5 /* NSString+Validation.m */,
+				84BE119A1A1211F400D8E4E5 /* NSURL+NsLookUp.h */,
+				84BE119B1A1211F400D8E4E5 /* NSURL+NsLookUp.m */,
+				F3A12B391B9F3D7F009F4AA2 /* NSUserDefaults+ArchievedObjects.h */,
+				F3A12B3A1B9F3D7F009F4AA2 /* NSUserDefaults+ArchievedObjects.m */,
 				84BE116E1A12105D00D8E4E5 /* UIImage+ImageEffects.h */,
 				84BE116F1A12105D00D8E4E5 /* UIImage+ImageEffects.m */,
+				84068C2A1A83D9A70067AA5B /* UIImage+ImageFromColor.h */,
+				84068C2B1A83D9A70067AA5B /* UIImage+ImageFromColor.m */,
 				84BE11701A12105D00D8E4E5 /* UIImage+ImageTemplate.h */,
 				84BE11711A12105D00D8E4E5 /* UIImage+ImageTemplate.m */,
+				84CF90F01AB9B30D00E7AE9D /* UIResponder+FirstResponer.h */,
+				84CF90F11AB9B30D00E7AE9D /* UIResponder+FirstResponer.m */,
+				F312D6D61BAAF7CC00B85604 /* UITableView+VisibleSections.h */,
+				F312D6D71BAAF7CC00B85604 /* UITableView+VisibleSections.m */,
 				84BE11721A12105D00D8E4E5 /* UIView+Animation.h */,
 				84BE11731A12105D00D8E4E5 /* UIView+Animation.m */,
+				84120B1C1A40434F00B067D3 /* UIView+ColoredNib.h */,
+				84120B1D1A40434F00B067D3 /* UIView+ColoredNib.m */,
 				84BE11741A12105D00D8E4E5 /* UIView+Drawing.h */,
 				84BE11751A12105D00D8E4E5 /* UIView+Drawing.m */,
 				84BE11761A12105D00D8E4E5 /* UIView+onDrawRectBlock.h */,
 				84BE11771A12105D00D8E4E5 /* UIView+onDrawRectBlock.m */,
+				8441F5241B13402C00E465E3 /* UIView+Scale.h */,
+				8441F5251B13402C00E465E3 /* UIView+Scale.m */,
 				84BE11781A12105D00D8E4E5 /* UIView+SearchSuperview.h */,
 				84BE11791A12105D00D8E4E5 /* UIView+SearchSuperview.m */,
 				84BE117A1A12105D00D8E4E5 /* UIView+SizeAndPosition.h */,
 				84BE117B1A12105D00D8E4E5 /* UIView+SizeAndPosition.m */,
 				84BE117C1A12105D00D8E4E5 /* UIView+Snapshot.h */,
 				84BE117D1A12105D00D8E4E5 /* UIView+Snapshot.m */,
-				8441F5241B13402C00E465E3 /* UIView+Scale.h */,
-				8441F5251B13402C00E465E3 /* UIView+Scale.m */,
-				84BE119A1A1211F400D8E4E5 /* NSURL+NsLookUp.h */,
-				84BE119B1A1211F400D8E4E5 /* NSURL+NsLookUp.m */,
-				84A58C941A28B613007AAA29 /* NSNotificationCenter+Addition.h */,
-				84A58C951A28B613007AAA29 /* NSNotificationCenter+Addition.m */,
-				84120B1C1A40434F00B067D3 /* UIView+ColoredNib.h */,
-				84120B1D1A40434F00B067D3 /* UIView+ColoredNib.m */,
-				84068C2A1A83D9A70067AA5B /* UIImage+ImageFromColor.h */,
-				84068C2B1A83D9A70067AA5B /* UIImage+ImageFromColor.m */,
-				841C96B41AB04DC500D815E8 /* MKMapView+ZoomLevel.h */,
-				841C96B51AB04DC500D815E8 /* MKMapView+ZoomLevel.m */,
-				84CF90F01AB9B30D00E7AE9D /* UIResponder+FirstResponer.h */,
-				84CF90F11AB9B30D00E7AE9D /* UIResponder+FirstResponer.m */,
-				F3A12B391B9F3D7F009F4AA2 /* NSUserDefaults+ArchievedObjects.h */,
-				F3A12B3A1B9F3D7F009F4AA2 /* NSUserDefaults+ArchievedObjects.m */,
-				F312D6D61BAAF7CC00B85604 /* UITableView+VisibleSections.h */,
-				F312D6D71BAAF7CC00B85604 /* UITableView+VisibleSections.m */,
+				F3148A481C0EFE17008A8AC1 /* UIViewController+AddContainerController.h */,
+				F3148A491C0EFE17008A8AC1 /* UIViewController+AddContainerController.m */,
 			);
 			name = Extensions;
 			path = ../../Extensions;
@@ -536,6 +541,7 @@
 				84BE11991A12105D00D8E4E5 /* UIView+Snapshot.m in Sources */,
 				84BE118D1A12105D00D8E4E5 /* NSPersistentStoreCoordinator+isMigrationNeeded.m in Sources */,
 				84BE11971A12105D00D8E4E5 /* UIView+SearchSuperview.m in Sources */,
+				F3148A4A1C0EFE17008A8AC1 /* UIViewController+AddContainerController.m in Sources */,
 				84A58C961A28B613007AAA29 /* NSNotificationCenter+Addition.m in Sources */,
 				84BE11821A12105D00D8E4E5 /* CustomEnumerator.m in Sources */,
 				84BE119C1A1211F400D8E4E5 /* NSURL+NsLookUp.m in Sources */,

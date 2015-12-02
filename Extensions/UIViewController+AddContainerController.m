@@ -20,4 +20,12 @@
     }
 }
 
+- (void)addChildContainerController:(UIViewController *)childController insideSubview:(UIView *)subview {
+    if (childController) {
+        [childController willMoveToParentViewController:self];
+        [self addChildViewController:childController];
+        [subview addResizableSubview:childController.view];
+    }
+}
+
 @end
