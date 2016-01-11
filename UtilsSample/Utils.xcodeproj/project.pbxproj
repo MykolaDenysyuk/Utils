@@ -60,6 +60,7 @@
 		F312D6D81BAAF7CC00B85604 /* UITableView+VisibleSections.m in Sources */ = {isa = PBXBuildFile; fileRef = F312D6D71BAAF7CC00B85604 /* UITableView+VisibleSections.m */; };
 		F3148A4A1C0EFE17008A8AC1 /* UIViewController+AddContainerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3148A491C0EFE17008A8AC1 /* UIViewController+AddContainerController.m */; };
 		F3A12B3B1B9F3D7F009F4AA2 /* NSUserDefaults+ArchievedObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A12B3A1B9F3D7F009F4AA2 /* NSUserDefaults+ArchievedObjects.m */; };
+		F3C2E24C1C44150D0054B3CA /* UIView+AutolayoutDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C2E24B1C44150D0054B3CA /* UIView+AutolayoutDebug.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -176,6 +177,8 @@
 		F3148A491C0EFE17008A8AC1 /* UIViewController+AddContainerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AddContainerController.m"; sourceTree = "<group>"; };
 		F3A12B391B9F3D7F009F4AA2 /* NSUserDefaults+ArchievedObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+ArchievedObjects.h"; sourceTree = "<group>"; };
 		F3A12B3A1B9F3D7F009F4AA2 /* NSUserDefaults+ArchievedObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+ArchievedObjects.m"; sourceTree = "<group>"; };
+		F3C2E24A1C44150D0054B3CA /* UIView+AutolayoutDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutolayoutDebug.h"; sourceTree = "<group>"; };
+		F3C2E24B1C44150D0054B3CA /* UIView+AutolayoutDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutolayoutDebug.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -386,6 +389,8 @@
 				84CF90F11AB9B30D00E7AE9D /* UIResponder+FirstResponer.m */,
 				F312D6D61BAAF7CC00B85604 /* UITableView+VisibleSections.h */,
 				F312D6D71BAAF7CC00B85604 /* UITableView+VisibleSections.m */,
+				F3C2E24A1C44150D0054B3CA /* UIView+AutolayoutDebug.h */,
+				F3C2E24B1C44150D0054B3CA /* UIView+AutolayoutDebug.m */,
 				84BE11721A12105D00D8E4E5 /* UIView+Animation.h */,
 				84BE11731A12105D00D8E4E5 /* UIView+Animation.m */,
 				84120B1C1A40434F00B067D3 /* UIView+ColoredNib.h */,
@@ -563,6 +568,7 @@
 				84BE11851A12105D00D8E4E5 /* CustomPickerView.m in Sources */,
 				84BE11891A12105D00D8E4E5 /* Action.m in Sources */,
 				84BE11981A12105D00D8E4E5 /* UIView+SizeAndPosition.m in Sources */,
+				F3C2E24C1C44150D0054B3CA /* UIView+AutolayoutDebug.m in Sources */,
 				84BE11941A12105D00D8E4E5 /* UIView+Animation.m in Sources */,
 				84BE11961A12105D00D8E4E5 /* UIView+onDrawRectBlock.m in Sources */,
 				84120B1E1A40434F00B067D3 /* UIView+ColoredNib.m in Sources */,
