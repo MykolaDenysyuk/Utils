@@ -27,11 +27,14 @@
 
 - (void)setObjectCollection:(id<NSFastEnumeration>)collection
 {
-    if ([(id)collection respondsToSelector:@selector(objectEnumerator)]) {
-        NSEnumerator * enumerator = [(id)collection performSelector:@selector(objectEnumerator)];
-        _allObjects = enumerator.allObjects;
+    if ([(id)collection respondsToSelector:@selector(countByEnumeratingWithState:objects:count:)]) {
+        NSMutableArray * mAllObjects = [NSMutableArray new];
+        for (id item in collection)
+            [mAllObjects addObject:item];
+        
+        _allObjects = mAllObjects.copy;
         self.objectsLeft? [self.objectsLeft removeAllObjects] : nil;
-        self.objectsLeft = [NSMutableArray arrayWithArray:enumerator.allObjects];
+        self.objectsLeft = [NSMutableArray arrayWithArray:_allObjects];
     }
     else
         NSAssert(NO, @"collection [%@] is not supported or nil. Collection should be NSArray, NSSet or NSDictionary instance", collection);

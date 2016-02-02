@@ -18,12 +18,17 @@
 
 + (RKObjectMapping *)objectMappingForManagedObjectStore:(RKManagedObjectStore *)store
 {
-    RKEntityMapping* mapping = [RKEntityMapping mappingForEntityForName:NSStringFromClass(self.class)
+    RKEntityMapping* mapping = [RKEntityMapping mappingForEntityForName:[self entityName]?: NSStringFromClass(self.class)
                                                    inManagedObjectStore:store];
     [self setupMapping:mapping];
     [mapping setIdentificationAttributes:[self identifiers]];
     
     return mapping;
+}
+
++ (NSString *)entityName
+{
+    return nil;
 }
 
 @end

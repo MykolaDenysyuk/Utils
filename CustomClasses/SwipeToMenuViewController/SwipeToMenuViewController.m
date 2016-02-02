@@ -96,6 +96,9 @@
 {
     CGFloat contentOffsetX = scrollView.contentOffset.x;
     
+    if (contentOffsetX == 0)
+        return;
+    
     if (self.lastContentOffset.x == 0 && contentOffsetX > kPRECISION)                                           // slide to right from left container ...
         [self scrollToCentralContainer];
     else if (self.lastContentOffset.x == SIDE_CONTAINER_WIDTH && contentOffsetX < (SIDE_CONTAINER_WIDTH - kPRECISION))    // slide to left from center ...

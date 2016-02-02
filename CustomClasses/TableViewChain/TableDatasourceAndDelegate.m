@@ -20,6 +20,13 @@
 
 @implementation TableDatasourceAndDelegate
 
+- (void)dealloc
+{
+    _tableView.dataSource = nil;
+    _tableView.delegate = nil;
+    _tableView = nil;
+}
+
 - (void)awakeFromNib
 {
     [super awakeFromNib];

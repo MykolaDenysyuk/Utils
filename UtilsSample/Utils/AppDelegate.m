@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "XPhoneFormatter.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +16,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.    
+    // Override point for customization after application launch.
+    XPhoneFormatter* formatter = [XPhoneFormatter new];
+    NSLog(@"%@", [formatter stringForObjectValue:@"0123456789"]);
     return YES;
 }
 

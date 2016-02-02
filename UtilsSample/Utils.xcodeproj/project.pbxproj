@@ -12,6 +12,11 @@
 		6F5B8C771C61608000294BED /* TransitionInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F5B8C741C61608000294BED /* TransitionInteractor.m */; };
 		6FE37D8B1A339F22000D69ED /* ScrollViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE37D8A1A339F22000D69ED /* ScrollViewDelegate.m */; };
 		84120B1E1A40434F00B067D3 /* UIView+ColoredNib.m in Sources */ = {isa = PBXBuildFile; fileRef = 84120B1D1A40434F00B067D3 /* UIView+ColoredNib.m */; };
+		841C96B31AB04D9400D815E8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841C96B21AB04D9400D815E8 /* MapKit.framework */; };
+		841C96B61AB04DC500D815E8 /* MKMapView+ZoomLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 841C96B51AB04DC500D815E8 /* MKMapView+ZoomLevel.m */; };
+		8441F5261B13402C00E465E3 /* UIView+Scale.m in Sources */ = {isa = PBXBuildFile; fileRef = 8441F5251B13402C00E465E3 /* UIView+Scale.m */; };
+		8485351B1B32DE4500796536 /* XPhoneFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8485351A1B32DE4500796536 /* XPhoneFormatter.m */; };
+		8485351E1B32E55D00796536 /* XPhoneFormatterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8485351D1B32E55D00796536 /* XPhoneFormatterTest.m */; };
 		84A58C961A28B613007AAA29 /* NSNotificationCenter+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A58C951A28B613007AAA29 /* NSNotificationCenter+Addition.m */; };
 		84BE11201A12103F00D8E4E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BE111F1A12103F00D8E4E5 /* main.m */; };
 		84BE11231A12103F00D8E4E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BE11221A12103F00D8E4E5 /* AppDelegate.m */; };
@@ -52,7 +57,13 @@
 		84BE11A21A1212FF00D8E4E5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BE11A11A1212FF00D8E4E5 /* CFNetwork.framework */; };
 		84C2DA8F1A654445002C2E59 /* ViewAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2DA8E1A654445002C2E59 /* ViewAnimator.m */; };
 		84C2DA921A654517002C2E59 /* SpinViewAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2DA911A654517002C2E59 /* SpinViewAnimator.m */; };
+		84CF90F21AB9B30D00E7AE9D /* UIResponder+FirstResponer.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CF90F11AB9B30D00E7AE9D /* UIResponder+FirstResponer.m */; };
 		84D20F851A2F4F8400C7286A /* SwipeToMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D20F841A2F4F8400C7286A /* SwipeToMenuViewController.m */; };
+		F3113D661C2031D400577236 /* UIViewController+DebugLog.m in Sources */ = {isa = PBXBuildFile; fileRef = F3113D651C2031D400577236 /* UIViewController+DebugLog.m */; };
+		F312D6D81BAAF7CC00B85604 /* UITableView+VisibleSections.m in Sources */ = {isa = PBXBuildFile; fileRef = F312D6D71BAAF7CC00B85604 /* UITableView+VisibleSections.m */; };
+		F3148A4A1C0EFE17008A8AC1 /* UIViewController+AddContainerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3148A491C0EFE17008A8AC1 /* UIViewController+AddContainerController.m */; };
+		F3A12B3B1B9F3D7F009F4AA2 /* NSUserDefaults+ArchievedObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A12B3A1B9F3D7F009F4AA2 /* NSUserDefaults+ArchievedObjects.m */; };
+		F3C2E24C1C44150D0054B3CA /* UIView+AutolayoutDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C2E24B1C44150D0054B3CA /* UIView+AutolayoutDebug.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,8 +85,18 @@
 		6F5B8C741C61608000294BED /* TransitionInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionInteractor.m; sourceTree = "<group>"; };
 		6FE37D891A339F22000D69ED /* ScrollViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewDelegate.h; sourceTree = "<group>"; };
 		6FE37D8A1A339F22000D69ED /* ScrollViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewDelegate.m; sourceTree = "<group>"; };
+		84068C2A1A83D9A70067AA5B /* UIImage+ImageFromColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageFromColor.h"; sourceTree = "<group>"; };
+		84068C2B1A83D9A70067AA5B /* UIImage+ImageFromColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageFromColor.m"; sourceTree = "<group>"; };
 		84120B1C1A40434F00B067D3 /* UIView+ColoredNib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ColoredNib.h"; sourceTree = "<group>"; };
 		84120B1D1A40434F00B067D3 /* UIView+ColoredNib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ColoredNib.m"; sourceTree = "<group>"; };
+		841C96B21AB04D9400D815E8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		841C96B41AB04DC500D815E8 /* MKMapView+ZoomLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+ZoomLevel.h"; sourceTree = "<group>"; };
+		841C96B51AB04DC500D815E8 /* MKMapView+ZoomLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+ZoomLevel.m"; sourceTree = "<group>"; };
+		8441F5241B13402C00E465E3 /* UIView+Scale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Scale.h"; sourceTree = "<group>"; };
+		8441F5251B13402C00E465E3 /* UIView+Scale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Scale.m"; sourceTree = "<group>"; };
+		848535191B32DE4500796536 /* XPhoneFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPhoneFormatter.h; sourceTree = "<group>"; };
+		8485351A1B32DE4500796536 /* XPhoneFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPhoneFormatter.m; sourceTree = "<group>"; };
+		8485351D1B32E55D00796536 /* XPhoneFormatterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPhoneFormatterTest.m; sourceTree = "<group>"; };
 		84A58C941A28B613007AAA29 /* NSNotificationCenter+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+Addition.h"; sourceTree = "<group>"; };
 		84A58C951A28B613007AAA29 /* NSNotificationCenter+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+Addition.m"; sourceTree = "<group>"; };
 		84BE111A1A12103F00D8E4E5 /* Utils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Utils.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,8 +174,20 @@
 		84C2DA8E1A654445002C2E59 /* ViewAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewAnimator.m; sourceTree = "<group>"; };
 		84C2DA901A654517002C2E59 /* SpinViewAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpinViewAnimator.h; sourceTree = "<group>"; };
 		84C2DA911A654517002C2E59 /* SpinViewAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpinViewAnimator.m; sourceTree = "<group>"; };
+		84CF90F01AB9B30D00E7AE9D /* UIResponder+FirstResponer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+FirstResponer.h"; sourceTree = "<group>"; };
+		84CF90F11AB9B30D00E7AE9D /* UIResponder+FirstResponer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+FirstResponer.m"; sourceTree = "<group>"; };
 		84D20F831A2F4F8400C7286A /* SwipeToMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeToMenuViewController.h; sourceTree = "<group>"; };
 		84D20F841A2F4F8400C7286A /* SwipeToMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeToMenuViewController.m; sourceTree = "<group>"; };
+		F3113D641C2031D400577236 /* UIViewController+DebugLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DebugLog.h"; sourceTree = "<group>"; };
+		F3113D651C2031D400577236 /* UIViewController+DebugLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DebugLog.m"; sourceTree = "<group>"; };
+		F312D6D61BAAF7CC00B85604 /* UITableView+VisibleSections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+VisibleSections.h"; sourceTree = "<group>"; };
+		F312D6D71BAAF7CC00B85604 /* UITableView+VisibleSections.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+VisibleSections.m"; sourceTree = "<group>"; };
+		F3148A481C0EFE17008A8AC1 /* UIViewController+AddContainerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AddContainerController.h"; sourceTree = "<group>"; };
+		F3148A491C0EFE17008A8AC1 /* UIViewController+AddContainerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AddContainerController.m"; sourceTree = "<group>"; };
+		F3A12B391B9F3D7F009F4AA2 /* NSUserDefaults+ArchievedObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+ArchievedObjects.h"; sourceTree = "<group>"; };
+		F3A12B3A1B9F3D7F009F4AA2 /* NSUserDefaults+ArchievedObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+ArchievedObjects.m"; sourceTree = "<group>"; };
+		F3C2E24A1C44150D0054B3CA /* UIView+AutolayoutDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutolayoutDebug.h"; sourceTree = "<group>"; };
+		F3C2E24B1C44150D0054B3CA /* UIView+AutolayoutDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutolayoutDebug.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +195,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841C96B31AB04D9400D815E8 /* MapKit.framework in Frameworks */,
 				84BE11A21A1212FF00D8E4E5 /* CFNetwork.framework in Frameworks */,
 				84BE11A01A1212FA00D8E4E5 /* UIKit.framework in Frameworks */,
 				84BE119E1A1212F200D8E4E5 /* Foundation.framework in Frameworks */,
@@ -200,9 +234,19 @@
 			path = BlocksDatasourceAndDelegate;
 			sourceTree = "<group>";
 		};
+		848535181B32DE0400796536 /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				848535191B32DE4500796536 /* XPhoneFormatter.h */,
+				8485351A1B32DE4500796536 /* XPhoneFormatter.m */,
+			);
+			path = Formatters;
+			sourceTree = "<group>";
+		};
 		84BE11111A12103F00D8E4E5 = {
 			isa = PBXGroup;
 			children = (
+				841C96B21AB04D9400D815E8 /* MapKit.framework */,
 				84BE11A11A1212FF00D8E4E5 /* CFNetwork.framework */,
 				84BE119F1A1212FA00D8E4E5 /* UIKit.framework */,
 				84BE119D1A1212F200D8E4E5 /* Foundation.framework */,
@@ -251,6 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				84BE11391A12104000D8E4E5 /* UtilsTests.m */,
+				8485351D1B32E55D00796536 /* XPhoneFormatterTest.m */,
 				84BE11371A12104000D8E4E5 /* Supporting Files */,
 			);
 			path = UtilsTests;
@@ -334,8 +379,12 @@
 		84BE115F1A12105D00D8E4E5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				841C96B41AB04DC500D815E8 /* MKMapView+ZoomLevel.h */,
+				841C96B51AB04DC500D815E8 /* MKMapView+ZoomLevel.m */,
 				84BE11601A12105D00D8E4E5 /* NSManagedObject+RKMapping.h */,
 				84BE11611A12105D00D8E4E5 /* NSManagedObject+RKMapping.m */,
+				84A58C941A28B613007AAA29 /* NSNotificationCenter+Addition.h */,
+				84A58C951A28B613007AAA29 /* NSNotificationCenter+Addition.m */,
 				84BE11621A12105D00D8E4E5 /* NSObject+RKMapping.h */,
 				84BE11631A12105D00D8E4E5 /* NSObject+RKMapping.m */,
 				84BE11641A12105D00D8E4E5 /* NSPersistentStoreCoordinator+isMigrationNeeded.h */,
@@ -348,28 +397,42 @@
 				84BE116B1A12105D00D8E4E5 /* NSString+RangesOfString.m */,
 				84BE116C1A12105D00D8E4E5 /* NSString+Validation.h */,
 				84BE116D1A12105D00D8E4E5 /* NSString+Validation.m */,
+				84BE119A1A1211F400D8E4E5 /* NSURL+NsLookUp.h */,
+				84BE119B1A1211F400D8E4E5 /* NSURL+NsLookUp.m */,
+				F3A12B391B9F3D7F009F4AA2 /* NSUserDefaults+ArchievedObjects.h */,
+				F3A12B3A1B9F3D7F009F4AA2 /* NSUserDefaults+ArchievedObjects.m */,
 				84BE116E1A12105D00D8E4E5 /* UIImage+ImageEffects.h */,
 				84BE116F1A12105D00D8E4E5 /* UIImage+ImageEffects.m */,
+				84068C2A1A83D9A70067AA5B /* UIImage+ImageFromColor.h */,
+				84068C2B1A83D9A70067AA5B /* UIImage+ImageFromColor.m */,
 				84BE11701A12105D00D8E4E5 /* UIImage+ImageTemplate.h */,
 				84BE11711A12105D00D8E4E5 /* UIImage+ImageTemplate.m */,
+				84CF90F01AB9B30D00E7AE9D /* UIResponder+FirstResponer.h */,
+				84CF90F11AB9B30D00E7AE9D /* UIResponder+FirstResponer.m */,
+				F312D6D61BAAF7CC00B85604 /* UITableView+VisibleSections.h */,
+				F312D6D71BAAF7CC00B85604 /* UITableView+VisibleSections.m */,
+				F3C2E24A1C44150D0054B3CA /* UIView+AutolayoutDebug.h */,
+				F3C2E24B1C44150D0054B3CA /* UIView+AutolayoutDebug.m */,
 				84BE11721A12105D00D8E4E5 /* UIView+Animation.h */,
 				84BE11731A12105D00D8E4E5 /* UIView+Animation.m */,
+				84120B1C1A40434F00B067D3 /* UIView+ColoredNib.h */,
+				84120B1D1A40434F00B067D3 /* UIView+ColoredNib.m */,
 				84BE11741A12105D00D8E4E5 /* UIView+Drawing.h */,
 				84BE11751A12105D00D8E4E5 /* UIView+Drawing.m */,
 				84BE11761A12105D00D8E4E5 /* UIView+onDrawRectBlock.h */,
 				84BE11771A12105D00D8E4E5 /* UIView+onDrawRectBlock.m */,
+				8441F5241B13402C00E465E3 /* UIView+Scale.h */,
+				8441F5251B13402C00E465E3 /* UIView+Scale.m */,
 				84BE11781A12105D00D8E4E5 /* UIView+SearchSuperview.h */,
 				84BE11791A12105D00D8E4E5 /* UIView+SearchSuperview.m */,
 				84BE117A1A12105D00D8E4E5 /* UIView+SizeAndPosition.h */,
 				84BE117B1A12105D00D8E4E5 /* UIView+SizeAndPosition.m */,
 				84BE117C1A12105D00D8E4E5 /* UIView+Snapshot.h */,
 				84BE117D1A12105D00D8E4E5 /* UIView+Snapshot.m */,
-				84BE119A1A1211F400D8E4E5 /* NSURL+NsLookUp.h */,
-				84BE119B1A1211F400D8E4E5 /* NSURL+NsLookUp.m */,
-				84A58C941A28B613007AAA29 /* NSNotificationCenter+Addition.h */,
-				84A58C951A28B613007AAA29 /* NSNotificationCenter+Addition.m */,
-				84120B1C1A40434F00B067D3 /* UIView+ColoredNib.h */,
-				84120B1D1A40434F00B067D3 /* UIView+ColoredNib.m */,
+				F3148A481C0EFE17008A8AC1 /* UIViewController+AddContainerController.h */,
+				F3148A491C0EFE17008A8AC1 /* UIViewController+AddContainerController.m */,
+				F3113D641C2031D400577236 /* UIViewController+DebugLog.h */,
+				F3113D651C2031D400577236 /* UIViewController+DebugLog.m */,
 			);
 			name = Extensions;
 			path = ../../Extensions;
@@ -501,6 +564,7 @@
 				84BE11881A12105D00D8E4E5 /* RandomPool.m in Sources */,
 				84BE11901A12105D00D8E4E5 /* NSString+RangesOfString.m in Sources */,
 				6FE37D8B1A339F22000D69ED /* ScrollViewDelegate.m in Sources */,
+				F3113D661C2031D400577236 /* UIViewController+DebugLog.m in Sources */,
 				84BE11921A12105D00D8E4E5 /* UIImage+ImageEffects.m in Sources */,
 				84D20F851A2F4F8400C7286A /* SwipeToMenuViewController.m in Sources */,
 				84BE118F1A12105D00D8E4E5 /* NSString+Ordinal.m in Sources */,
@@ -511,12 +575,15 @@
 				84BE11991A12105D00D8E4E5 /* UIView+Snapshot.m in Sources */,
 				84BE118D1A12105D00D8E4E5 /* NSPersistentStoreCoordinator+isMigrationNeeded.m in Sources */,
 				84BE11971A12105D00D8E4E5 /* UIView+SearchSuperview.m in Sources */,
+				F3148A4A1C0EFE17008A8AC1 /* UIViewController+AddContainerController.m in Sources */,
 				84A58C961A28B613007AAA29 /* NSNotificationCenter+Addition.m in Sources */,
 				84BE11821A12105D00D8E4E5 /* CustomEnumerator.m in Sources */,
 				6F5B8C771C61608000294BED /* TransitionInteractor.m in Sources */,
 				84BE119C1A1211F400D8E4E5 /* NSURL+NsLookUp.m in Sources */,
 				84BE11811A12105D00D8E4E5 /* CollectionDatasourceDelegate.m in Sources */,
+				F3A12B3B1B9F3D7F009F4AA2 /* NSUserDefaults+ArchievedObjects.m in Sources */,
 				84BE11951A12105D00D8E4E5 /* UIView+Drawing.m in Sources */,
+				8485351B1B32DE4500796536 /* XPhoneFormatter.m in Sources */,
 				84C2DA8F1A654445002C2E59 /* ViewAnimator.m in Sources */,
 				84BE11911A12105D00D8E4E5 /* NSString+Validation.m in Sources */,
 				84BE11231A12103F00D8E4E5 /* AppDelegate.m in Sources */,
@@ -526,14 +593,19 @@
 				84BE11891A12105D00D8E4E5 /* Action.m in Sources */,
 				6F5B8C761C61608000294BED /* TransitionAnimator.m in Sources */,
 				84BE11981A12105D00D8E4E5 /* UIView+SizeAndPosition.m in Sources */,
+				F3C2E24C1C44150D0054B3CA /* UIView+AutolayoutDebug.m in Sources */,
 				84BE11941A12105D00D8E4E5 /* UIView+Animation.m in Sources */,
 				84BE11961A12105D00D8E4E5 /* UIView+onDrawRectBlock.m in Sources */,
 				84120B1E1A40434F00B067D3 /* UIView+ColoredNib.m in Sources */,
+				841C96B61AB04DC500D815E8 /* MKMapView+ZoomLevel.m in Sources */,
+				8441F5261B13402C00E465E3 /* UIView+Scale.m in Sources */,
 				84BE118A1A12105D00D8E4E5 /* TableDatasourceAndDelegate.m in Sources */,
 				84BE11871A12105D00D8E4E5 /* ProgressIndicator.m in Sources */,
 				84C2DA921A654517002C2E59 /* SpinViewAnimator.m in Sources */,
 				84BE11201A12103F00D8E4E5 /* main.m in Sources */,
+				F312D6D81BAAF7CC00B85604 /* UITableView+VisibleSections.m in Sources */,
 				84BE11931A12105D00D8E4E5 /* UIImage+ImageTemplate.m in Sources */,
+				84CF90F21AB9B30D00E7AE9D /* UIResponder+FirstResponer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,6 +613,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8485351E1B32E55D00796536 /* XPhoneFormatterTest.m in Sources */,
 				84BE113A1A12104000D8E4E5 /* UtilsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
