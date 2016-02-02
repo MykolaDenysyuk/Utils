@@ -312,6 +312,7 @@
 		84BE11431A12105D00D8E4E5 /* CustomClasses */ = {
 			isa = PBXGroup;
 			children = (
+				848535181B32DE0400796536 /* Formatters */,
 				6F5B8C6E1C61606700294BED /* ViewControllerTransitioning */,
 				6FE37D881A339EC9000D69ED /* BlocksDatasourceAndDelegate */,
 				84C2DA8C1A654438002C2E59 /* Animator */,
