@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F5B8C751C61608000294BED /* AnimatedTransitionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F5B8C701C61608000294BED /* AnimatedTransitionProvider.m */; };
+		6F5B8C761C61608000294BED /* TransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F5B8C721C61608000294BED /* TransitionAnimator.m */; };
+		6F5B8C771C61608000294BED /* TransitionInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F5B8C741C61608000294BED /* TransitionInteractor.m */; };
 		6FE37D8B1A339F22000D69ED /* ScrollViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE37D8A1A339F22000D69ED /* ScrollViewDelegate.m */; };
 		84120B1E1A40434F00B067D3 /* UIView+ColoredNib.m in Sources */ = {isa = PBXBuildFile; fileRef = 84120B1D1A40434F00B067D3 /* UIView+ColoredNib.m */; };
 		84A58C961A28B613007AAA29 /* NSNotificationCenter+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A58C951A28B613007AAA29 /* NSNotificationCenter+Addition.m */; };
@@ -63,6 +66,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6F5B8C6F1C61608000294BED /* AnimatedTransitionProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedTransitionProvider.h; sourceTree = "<group>"; };
+		6F5B8C701C61608000294BED /* AnimatedTransitionProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedTransitionProvider.m; sourceTree = "<group>"; };
+		6F5B8C711C61608000294BED /* TransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionAnimator.h; sourceTree = "<group>"; };
+		6F5B8C721C61608000294BED /* TransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionAnimator.m; sourceTree = "<group>"; };
+		6F5B8C731C61608000294BED /* TransitionInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionInteractor.h; sourceTree = "<group>"; };
+		6F5B8C741C61608000294BED /* TransitionInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionInteractor.m; sourceTree = "<group>"; };
 		6FE37D891A339F22000D69ED /* ScrollViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewDelegate.h; sourceTree = "<group>"; };
 		6FE37D8A1A339F22000D69ED /* ScrollViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewDelegate.m; sourceTree = "<group>"; };
 		84120B1C1A40434F00B067D3 /* UIView+ColoredNib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ColoredNib.h"; sourceTree = "<group>"; };
@@ -169,6 +178,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F5B8C6E1C61606700294BED /* ViewControllerTransitioning */ = {
+			isa = PBXGroup;
+			children = (
+				6F5B8C6F1C61608000294BED /* AnimatedTransitionProvider.h */,
+				6F5B8C701C61608000294BED /* AnimatedTransitionProvider.m */,
+				6F5B8C711C61608000294BED /* TransitionAnimator.h */,
+				6F5B8C721C61608000294BED /* TransitionAnimator.m */,
+				6F5B8C731C61608000294BED /* TransitionInteractor.h */,
+				6F5B8C741C61608000294BED /* TransitionInteractor.m */,
+			);
+			path = ViewControllerTransitioning;
+			sourceTree = "<group>";
+		};
 		6FE37D881A339EC9000D69ED /* BlocksDatasourceAndDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +267,7 @@
 		84BE11431A12105D00D8E4E5 /* CustomClasses */ = {
 			isa = PBXGroup;
 			children = (
+				6F5B8C6E1C61606700294BED /* ViewControllerTransitioning */,
 				6FE37D881A339EC9000D69ED /* BlocksDatasourceAndDelegate */,
 				84C2DA8C1A654438002C2E59 /* Animator */,
 				84D20F821A2F4F6D00C7286A /* SwipeToMenuViewController */,
@@ -481,6 +504,7 @@
 				84BE11921A12105D00D8E4E5 /* UIImage+ImageEffects.m in Sources */,
 				84D20F851A2F4F8400C7286A /* SwipeToMenuViewController.m in Sources */,
 				84BE118F1A12105D00D8E4E5 /* NSString+Ordinal.m in Sources */,
+				6F5B8C751C61608000294BED /* AnimatedTransitionProvider.m in Sources */,
 				84BE118E1A12105D00D8E4E5 /* NSString+Compare.m in Sources */,
 				84BE117F1A12105D00D8E4E5 /* CircularPorgressBarView.m in Sources */,
 				84BE11261A12103F00D8E4E5 /* ViewController.m in Sources */,
@@ -489,6 +513,7 @@
 				84BE11971A12105D00D8E4E5 /* UIView+SearchSuperview.m in Sources */,
 				84A58C961A28B613007AAA29 /* NSNotificationCenter+Addition.m in Sources */,
 				84BE11821A12105D00D8E4E5 /* CustomEnumerator.m in Sources */,
+				6F5B8C771C61608000294BED /* TransitionInteractor.m in Sources */,
 				84BE119C1A1211F400D8E4E5 /* NSURL+NsLookUp.m in Sources */,
 				84BE11811A12105D00D8E4E5 /* CollectionDatasourceDelegate.m in Sources */,
 				84BE11951A12105D00D8E4E5 /* UIView+Drawing.m in Sources */,
@@ -499,6 +524,7 @@
 				84BE11801A12105D00D8E4E5 /* CircularProgressView.m in Sources */,
 				84BE11851A12105D00D8E4E5 /* CustomPickerView.m in Sources */,
 				84BE11891A12105D00D8E4E5 /* Action.m in Sources */,
+				6F5B8C761C61608000294BED /* TransitionAnimator.m in Sources */,
 				84BE11981A12105D00D8E4E5 /* UIView+SizeAndPosition.m in Sources */,
 				84BE11941A12105D00D8E4E5 /* UIView+Animation.m in Sources */,
 				84BE11961A12105D00D8E4E5 /* UIView+onDrawRectBlock.m in Sources */,
