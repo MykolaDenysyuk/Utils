@@ -19,6 +19,13 @@
     // Override point for customization after application launch.
     XPhoneFormatter* formatter = [XPhoneFormatter new];
     NSLog(@"%@", [formatter stringForObjectValue:@"0123456789"]);
+    
+    for (int i = 0; i < 100; i++) {
+        id object = @{@"key": [NSString stringWithFormat:@"%d_value", i]};
+        id bobjack = [[NSDictionary alloc] initWithObjectsAndKeys:[NSString stringWithFormat:@"%d_value", i], @"key", nil];
+        printf("%d. +dict %p, -dict %p\n", i, object, bobjack);
+    }
+    
     return YES;
 }
 
