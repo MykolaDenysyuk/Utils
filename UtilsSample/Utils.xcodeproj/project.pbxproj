@@ -59,6 +59,7 @@
 		84C2DA921A654517002C2E59 /* SpinViewAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2DA911A654517002C2E59 /* SpinViewAnimator.m */; };
 		84CF90F21AB9B30D00E7AE9D /* UIResponder+FirstResponer.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CF90F11AB9B30D00E7AE9D /* UIResponder+FirstResponer.m */; };
 		84D20F851A2F4F8400C7286A /* SwipeToMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D20F841A2F4F8400C7286A /* SwipeToMenuViewController.m */; };
+		A8B0C9D11D016FEC006B3F11 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B0C9D01D016FEC006B3F11 /* UIView+Extension.swift */; };
 		F3113D661C2031D400577236 /* UIViewController+DebugLog.m in Sources */ = {isa = PBXBuildFile; fileRef = F3113D651C2031D400577236 /* UIViewController+DebugLog.m */; };
 		F312D6D81BAAF7CC00B85604 /* UITableView+VisibleSections.m in Sources */ = {isa = PBXBuildFile; fileRef = F312D6D71BAAF7CC00B85604 /* UITableView+VisibleSections.m */; };
 		F3148A4A1C0EFE17008A8AC1 /* UIViewController+AddContainerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3148A491C0EFE17008A8AC1 /* UIViewController+AddContainerController.m */; };
@@ -179,6 +180,8 @@
 		84CF90F11AB9B30D00E7AE9D /* UIResponder+FirstResponer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+FirstResponer.m"; sourceTree = "<group>"; };
 		84D20F831A2F4F8400C7286A /* SwipeToMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeToMenuViewController.h; sourceTree = "<group>"; };
 		84D20F841A2F4F8400C7286A /* SwipeToMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeToMenuViewController.m; sourceTree = "<group>"; };
+		A8B0C9CF1D016FEB006B3F11 /* Utils-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Utils-Bridging-Header.h"; sourceTree = "<group>"; };
+		A8B0C9D01D016FEC006B3F11 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		F3113D641C2031D400577236 /* UIViewController+DebugLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DebugLog.h"; sourceTree = "<group>"; };
 		F3113D651C2031D400577236 /* UIViewController+DebugLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DebugLog.m"; sourceTree = "<group>"; };
 		F312D6D61BAAF7CC00B85604 /* UITableView+VisibleSections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+VisibleSections.h"; sourceTree = "<group>"; };
@@ -439,6 +442,8 @@
 				F3148A491C0EFE17008A8AC1 /* UIViewController+AddContainerController.m */,
 				F3113D641C2031D400577236 /* UIViewController+DebugLog.h */,
 				F3113D651C2031D400577236 /* UIViewController+DebugLog.m */,
+				A8B0C9D01D016FEC006B3F11 /* UIView+Extension.swift */,
+				A8B0C9CF1D016FEB006B3F11 /* Utils-Bridging-Header.h */,
 			);
 			name = Extensions;
 			path = ../../Extensions;
@@ -508,6 +513,7 @@
 		84BE11121A12103F00D8E4E5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Mykola Denysyuk";
 				TargetAttributes = {
@@ -577,6 +583,7 @@
 				6F5B8C751C61608000294BED /* AnimatedTransitionProvider.m in Sources */,
 				84BE118E1A12105D00D8E4E5 /* NSString+Compare.m in Sources */,
 				84BE117F1A12105D00D8E4E5 /* CircularPorgressBarView.m in Sources */,
+				A8B0C9D11D016FEC006B3F11 /* UIView+Extension.swift in Sources */,
 				84BE11261A12103F00D8E4E5 /* ViewController.m in Sources */,
 				84BE11991A12105D00D8E4E5 /* UIView+Snapshot.m in Sources */,
 				84BE118D1A12105D00D8E4E5 /* NSPersistentStoreCoordinator+isMigrationNeeded.m in Sources */,
@@ -738,11 +745,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				INFOPLIST_FILE = Utils/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "../Extensions/Utils-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -752,11 +762,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				INFOPLIST_FILE = Utils/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "../Extensions/Utils-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
