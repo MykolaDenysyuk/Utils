@@ -17,10 +17,10 @@ extension UIView {
     }
     
     private class func _instance<T>(nibName:String) -> T {
-        let bundle = resourcesBundle()
+        let bundle = NSBundle(forClass: self)
         if let view = bundle.loadNibNamed(nibName, owner: nil, options: nil).first {
             return view as! T
         }
-        fatalError("There is no view with nib name \(nibName) inside PeopleComponent")
+        fatalError("There is no view with nib name \(nibName) inside \(bundle.bundleIdentifier) bundle")
     }
 }
